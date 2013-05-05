@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.ea.genome;
 
-import java.io.Serializable;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.ea.population.Population;
 import gwtcog.core.ml.ea.species.Species;
+
+import java.io.Serializable;
 
 /**
  * A basic abstract genome. Provides base functionality.

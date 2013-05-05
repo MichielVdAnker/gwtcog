@@ -23,12 +23,12 @@
  */
 package gwtcog.core.mathutil.matrices;
 
-import java.io.Serializable;
-
 import gwtcog.core.Encog;
 import gwtcog.core.mathutil.matrices.decomposition.LUDecomposition;
 import gwtcog.core.mathutil.matrices.decomposition.QRDecomposition;
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
+
+import java.io.Serializable;
 
 /**
  * This class implements a mathematical matrix. Matrix math is very important to

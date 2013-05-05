@@ -23,14 +23,14 @@
  */
 package gwtcog.core.neural.neat.training.opp;
 
-import java.util.Random;
-
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.neural.neat.NEATNeuronType;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.util.Random;
 
 /**
  * Mutates a NEAT genome by adding a link. To add a link, two random neurons are

@@ -23,18 +23,18 @@
  */
 package gwtcog.core.ml.bayesian.query;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
 import gwtcog.core.ml.bayesian.EventType;
 import gwtcog.core.ml.bayesian.query.sample.EventState;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Provides basic functionality for a Bayesian query. This class is abstract,

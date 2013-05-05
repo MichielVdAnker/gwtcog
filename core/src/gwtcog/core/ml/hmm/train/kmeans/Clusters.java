@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.hmm.train.kmeans;
 
+import gwtcog.core.ml.data.MLDataPair;
+import gwtcog.core.ml.data.MLDataSet;
+import gwtcog.core.util.kmeans.KMeansUtil;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
-
-import gwtcog.core.ml.data.MLDataPair;
-import gwtcog.core.ml.data.MLDataSet;
-import gwtcog.core.util.kmeans.KMeansUtil;
 
 /**
  * Clusters used for the KMeans HMM training algorithm.

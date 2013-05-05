@@ -23,15 +23,15 @@
  */
 package gwtcog.core.ml.genetic.crossover;
 
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.ml.genetic.GeneticError;
 import gwtcog.core.ml.genetic.genome.IntegerArrayGenome;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
 
 /**
  * A simple cross over where genes are simply "spliced". Genes are not allowed

@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.fitness;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MultiObjectiveFitness  implements CalculateScore, Serializable {
 	

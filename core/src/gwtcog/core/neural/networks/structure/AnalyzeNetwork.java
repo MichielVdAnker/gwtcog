@@ -23,14 +23,14 @@
  */
 package gwtcog.core.neural.networks.structure;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.mathutil.NumericRange;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.layers.Layer;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.Format;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Allows the weights and bias values of the neural network to be analyzed.

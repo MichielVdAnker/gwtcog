@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml;
 
+import gwtcog.core.Encog;
+import gwtcog.core.util.csv.CSVFormat;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-
-import gwtcog.core.Encog;
-import gwtcog.core.util.csv.CSVFormat;
 
 /**
  * A class that provides basic property functionality for the MLProperties

@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.prg;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 import gwtcog.core.ml.prg.extension.ProgramExtensionTemplate;
 import gwtcog.core.ml.tree.TreeNode;
 import gwtcog.core.ml.tree.basic.BasicTreeNode;
+
+import java.io.Serializable;
 
 /**
  * Represents a program node in an EPL program.

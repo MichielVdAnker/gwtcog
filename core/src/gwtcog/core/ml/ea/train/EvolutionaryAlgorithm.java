@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.ea.train;
 
-import java.util.List;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.ea.codec.GeneticCODEC;
 import gwtcog.core.ml.ea.genome.Genome;
@@ -36,6 +34,8 @@ import gwtcog.core.ml.ea.rules.RuleHolder;
 import gwtcog.core.ml.ea.score.AdjustScore;
 import gwtcog.core.ml.ea.sort.GenomeComparator;
 import gwtcog.core.ml.ea.species.Speciation;
+
+import java.util.List;
 
 /**
  * This interface defines the basic functionality of an Evolutionary Algorithm.

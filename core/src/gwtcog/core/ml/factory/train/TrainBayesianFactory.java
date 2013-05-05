@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.train;
 
-import java.util.Map;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
@@ -41,6 +39,8 @@ import gwtcog.core.ml.factory.MLTrainFactory;
 import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
 
 public class TrainBayesianFactory {
 	/**

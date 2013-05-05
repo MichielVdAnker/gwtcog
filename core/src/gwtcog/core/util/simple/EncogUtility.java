@@ -25,8 +25,6 @@ package gwtcog.core.util.simple;
 
 //import java.io.File;
 
-import java.util.ArrayList;
-
 import gwtcog.core.engine.network.activation.ActivationSigmoid;
 import gwtcog.core.engine.network.activation.ActivationTANH;
 import gwtcog.core.mathutil.error.ErrorCalculation;
@@ -47,6 +45,8 @@ import gwtcog.core.neural.networks.training.propagation.resilient.ResilientPropa
 import gwtcog.core.neural.pattern.FeedForwardPattern;
 import gwtcog.core.util.Format;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.util.ArrayList;
 
 /**
  * General utility class for Encog. Provides for some common Encog procedures.

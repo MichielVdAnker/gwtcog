@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.ea.opp.selection;
 
-import java.io.Serializable;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.io.Serializable;
+import java.util.Random;
 
 /**
  * Truncation selection chooses a random genome from the top genomes in the

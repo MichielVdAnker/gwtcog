@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.world.grid.probability;
 
-import java.util.Set;
-import java.util.TreeSet;
-
 import gwtcog.core.Encog;
 import gwtcog.core.ml.world.Action;
 import gwtcog.core.ml.world.State;
@@ -33,6 +30,9 @@ import gwtcog.core.ml.world.SuccessorState;
 import gwtcog.core.ml.world.WorldError;
 import gwtcog.core.ml.world.grid.GridState;
 import gwtcog.core.ml.world.grid.GridWorld;
+
+import java.util.Set;
+import java.util.TreeSet;
 
 public class GridStochasticProbability extends GridAbstractProbability {
 

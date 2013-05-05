@@ -23,14 +23,14 @@
  */
 package gwtcog.core.neural.pattern;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.layers.BasicLayer;
 import gwtcog.core.neural.networks.layers.Layer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Used to create feedforward neural networks. A feedforward network has an

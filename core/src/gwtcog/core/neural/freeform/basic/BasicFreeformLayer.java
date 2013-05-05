@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
+import gwtcog.core.neural.freeform.FreeformLayer;
+import gwtcog.core.neural.freeform.FreeformNeuron;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.neural.freeform.FreeformLayer;
-import gwtcog.core.neural.freeform.FreeformNeuron;
 
 /**
  * Implements a basic freeform layer.

@@ -41,7 +41,7 @@ public class NormalizeArray {
 	/**
 	 * Contains stats about the array normalized.
 	 */
-//	private NormalizedField stats;
+	private NormalizedField stats;
 
 	/**
 	 * The high end of the range that the values are normalized into. Typically
@@ -85,30 +85,30 @@ public class NormalizeArray {
 //		return this.stats;
 //	}
 
-//	/**
-//	 * Normalize the array. Return the new normalized array.
-//	 * 
-//	 * @param inputArray
-//	 *            The input array.
-//	 * @return The normalized array.
-//	 */
-//	public final double[] process(final double[] inputArray) {
-//		this.stats = new NormalizedField();
-//		this.stats.setNormalizedHigh(this.normalizedHigh);
-//		this.stats.setNormalizedLow(this.normalizedLow);
-//
-//		for (final double element : inputArray) {
-//			this.stats.analyze(element);
-//		}
-//
-//		final double[] result = new double[inputArray.length];
-//
-//		for (int i = 0; i < inputArray.length; i++) {
-//			result[i] = this.stats.normalize(inputArray[i]);
-//		}
-//
-//		return result;
-//	}
+	/**
+	 * Normalize the array. Return the new normalized array.
+	 * 
+	 * @param inputArray
+	 *            The input array.
+	 * @return The normalized array.
+	 */
+	public final double[] process(final double[] inputArray) {
+		this.stats = new NormalizedField();
+		this.stats.setNormalizedHigh(this.normalizedHigh);
+		this.stats.setNormalizedLow(this.normalizedLow);
+
+		for (final double element : inputArray) {
+			this.stats.analyze(element);
+		}
+
+		final double[] result = new double[inputArray.length];
+
+		for (int i = 0; i < inputArray.length; i++) {
+			result[i] = this.stats.normalize(inputArray[i]);
+		}
+
+		return result;
+	}
 
 	/**
 	 * Set the high value to normalize to.

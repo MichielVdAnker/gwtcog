@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.kmeans;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.MLCluster;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
@@ -35,6 +32,9 @@ import gwtcog.core.ml.data.basic.BasicMLDataPairCentroid;
 import gwtcog.core.ml.data.basic.BasicMLDataSet;
 import gwtcog.core.util.kmeans.Centroid;
 import gwtcog.core.util.kmeans.Cluster;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Holds a cluster of MLData items that have been clustered 

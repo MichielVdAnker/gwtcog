@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.opp;
 
-import java.util.Random;
-
 import gwtcog.core.util.obj.ChooseObject;
 import gwtcog.core.util.obj.ObjectHolder;
+
+import java.util.Random;
 
 /**
  * This class holds a list of evolutionary operators. Each operator is given a

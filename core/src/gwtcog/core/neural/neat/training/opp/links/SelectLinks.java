@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.neat.training.opp.links;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * This interface defines ways that NEAT links can be chosen for mutation.

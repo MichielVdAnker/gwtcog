@@ -23,10 +23,10 @@
  */
 package gwtcog.core.mathutil.matrices.decomposition;
 
-import java.util.Arrays;
-
 import gwtcog.core.mathutil.EncogMath;
 import gwtcog.core.mathutil.matrices.Matrix;
+
+import java.util.Arrays;
 
 /**
  * Eigenvalues and eigenvectors of a real matrix.

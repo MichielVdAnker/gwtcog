@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.world.basic;
 
-import java.util.Set;
-
 import gwtcog.core.ml.world.Action;
 import gwtcog.core.ml.world.AgentPolicy;
 import gwtcog.core.ml.world.State;
 import gwtcog.core.ml.world.SuccessorState;
 import gwtcog.core.ml.world.World;
 import gwtcog.core.ml.world.WorldAgent;
+
+import java.util.Set;
 
 public class BasicAgent implements WorldAgent {
 

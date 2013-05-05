@@ -23,13 +23,13 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.neural.freeform.FreeformConnection;
 import gwtcog.core.neural.freeform.FreeformNeuron;
 import gwtcog.core.neural.freeform.InputSummation;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class provides a basic implementation of a freeform neuron.

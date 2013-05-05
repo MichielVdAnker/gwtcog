@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.world.basic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.world.Action;
 import gwtcog.core.ml.world.ActionProbability;
@@ -33,6 +30,9 @@ import gwtcog.core.ml.world.State;
 import gwtcog.core.ml.world.World;
 import gwtcog.core.ml.world.WorldAgent;
 import gwtcog.core.ml.world.grid.GridState;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public abstract class BasicWorld implements World {

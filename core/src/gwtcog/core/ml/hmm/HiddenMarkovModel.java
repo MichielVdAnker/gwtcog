@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.hmm;
 
-import java.io.Serializable;
-import java.util.Iterator;
-
 import gwtcog.core.CloneTool;
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.BasicML;
@@ -38,6 +35,9 @@ import gwtcog.core.ml.hmm.alog.ViterbiCalculator;
 import gwtcog.core.ml.hmm.distributions.ContinousDistribution;
 import gwtcog.core.ml.hmm.distributions.DiscreteDistribution;
 import gwtcog.core.ml.hmm.distributions.StateDistribution;
+
+import java.io.Serializable;
+import java.util.Iterator;
 
 /**
  * A Hidden Markov Model (HMM) is a Machine Learning Method that allows for

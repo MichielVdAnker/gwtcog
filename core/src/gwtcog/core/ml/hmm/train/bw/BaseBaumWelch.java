@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.hmm.train.bw;
 
-import java.util.Arrays;
-import java.util.List;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.TrainingImplementationType;
 import gwtcog.core.ml.data.MLDataSet;
@@ -36,6 +33,9 @@ import gwtcog.core.ml.hmm.distributions.StateDistribution;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * This class provides the base implementation for Baum-Welch learning for

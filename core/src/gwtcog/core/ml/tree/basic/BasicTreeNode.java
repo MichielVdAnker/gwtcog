@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.tree.basic;
 
+import gwtcog.core.ml.tree.TreeNode;
+import gwtcog.core.ml.tree.traverse.tasks.TaskCountNodes;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.ml.tree.TreeNode;
-import gwtcog.core.ml.tree.traverse.tasks.TaskCountNodes;
 
 public class BasicTreeNode implements TreeNode, Serializable {
 	private final List<TreeNode> childNodes = new ArrayList<TreeNode>();

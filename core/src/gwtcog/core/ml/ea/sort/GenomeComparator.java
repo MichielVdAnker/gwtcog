@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.ea.sort;
 
-import java.util.Comparator;
-
 import gwtcog.core.ml.ea.genome.Genome;
+
+import java.util.Comparator;
 
 /**
  * Defines methods for comparing genomes. Also provides methods to apply bonuses

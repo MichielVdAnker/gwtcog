@@ -23,11 +23,11 @@
  */
 package gwtcog.core.mathutil.randomize;
 
-import java.io.Serializable;
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.util.EngineArray;
+
+import java.io.Serializable;
+import java.util.Random;
 
 /**
  * Generate random choices unevenly.  This class is used to select random 

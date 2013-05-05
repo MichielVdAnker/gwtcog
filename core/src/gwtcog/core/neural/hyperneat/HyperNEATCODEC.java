@@ -23,10 +23,6 @@
  */
 package gwtcog.core.neural.hyperneat;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.engine.network.activation.ActivationSteepenedSigmoid;
 import gwtcog.core.ml.MLMethod;
@@ -42,6 +38,10 @@ import gwtcog.core.neural.neat.NEATCODEC;
 import gwtcog.core.neural.neat.NEATLink;
 import gwtcog.core.neural.neat.NEATNetwork;
 import gwtcog.core.neural.neat.NEATPopulation;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class HyperNEATCODEC implements GeneticCODEC {
 

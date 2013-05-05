@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.score;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
+
+import java.io.Serializable;
 
 /**
  * An empty score function.  Simply returns zero as the score, always.

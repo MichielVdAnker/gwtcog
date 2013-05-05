@@ -23,11 +23,11 @@
  */
 package gwtcog.core.neural.data.basic;
 
-import java.util.List;
-
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.basic.BasicMLDataSet;
 import gwtcog.core.neural.data.NeuralDataSet;
+
+import java.util.List;
 
 /**
  * This is an alias class for Encog 2.5 compatibility. This class aliases

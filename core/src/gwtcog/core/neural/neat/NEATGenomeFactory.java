@@ -23,13 +23,13 @@
  */
 package gwtcog.core.neural.neat;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.GenomeFactory;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * This interface defines additional methods defined to create NEAT genomes. It

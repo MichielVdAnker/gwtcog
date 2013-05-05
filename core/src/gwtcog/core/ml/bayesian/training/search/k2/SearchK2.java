@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.bayesian.training.search.k2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.mathutil.EncogMath;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
@@ -33,6 +30,9 @@ import gwtcog.core.ml.bayesian.query.enumerate.EnumerationQuery;
 import gwtcog.core.ml.bayesian.training.TrainBayesian;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Search for optimal Bayes structure with K2.

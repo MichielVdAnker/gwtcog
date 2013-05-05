@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.train;
 
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.rbf.RBFEnum;
 import gwtcog.core.ml.MLMethod;
@@ -42,6 +40,8 @@ import gwtcog.core.neural.som.training.basic.neighborhood.NeighborhoodSingle;
 import gwtcog.core.util.ParamsHolder;
 import gwtcog.core.util.csv.CSVFormat;
 import gwtcog.core.util.csv.NumberList;
+
+import java.util.Map;
 
 /**
  * Train an SOM network with a neighborhood method.

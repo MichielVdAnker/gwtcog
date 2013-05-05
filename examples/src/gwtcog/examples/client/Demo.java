@@ -1,99 +1,141 @@
 package gwtcog.examples.client;
 
-import java.util.ArrayList;
+import gwtcog.examples.client.clustering.kmeans.SimpleKMeans;
+import gwtcog.examples.client.neural.boltzmann.BoltzTSP;
+import gwtcog.examples.client.neural.hopfield.HopfieldAssociate;
+import gwtcog.examples.client.neural.neat.XORNEAT;
+import gwtcog.examples.client.neural.predict.sunspot.PredictSunspotSVM;
+import gwtcog.examples.client.neural.som.SimpleSOM;
 
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.user.client.Command;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.RunAsyncCallback;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
-
-import gwtcog.core.Encog;
-import gwtcog.core.ml.CalculateScore;
-import gwtcog.core.ml.data.MLDataSet;
-import gwtcog.core.ml.data.basic.BasicMLDataSet;
-import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
-import gwtcog.core.neural.neat.NEATNetwork;
-import gwtcog.core.neural.neat.NEATPopulation;
-import gwtcog.core.neural.neat.NEATUtil;
-import gwtcog.core.neural.networks.training.TrainingSetScore;
-import gwtcog.core.util.simple.EncogUtility;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class Demo implements EntryPoint {
 
-	private VerticalPanel panel;
-
-	public static double XOR_INPUT[][] = { { 0.0, 0.0 }, { 1.0, 0.0 },
-		{ 0.0, 1.0 }, { 1.0, 1.0 } };
-
-	public static double XOR_IDEAL[][] = { { 0.0 }, { 1.0 }, { 1.0 }, { 0.0 } };
-
 	/**
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
 
-		//setup output
-		panel = new VerticalPanel();
-		RootPanel.get().add(panel);
+		HorizontalPanel baseLayout = new HorizontalPanel();
+		VerticalPanel optionsPanel = new VerticalPanel();
+		final HorizontalPanel demoPanel = new HorizontalPanel();
 
-		//show we've started
-		panel.add(new Label("Started!"));
+		baseLayout.add(optionsPanel);
+		baseLayout.add(demoPanel);
+		RootPanel.get().add(baseLayout);
 
-		MLDataSet trainingSet = new BasicMLDataSet(XOR_INPUT, XOR_IDEAL);
+		//setup demo options
+		optionsPanel.add(new Label("Pick a gwtcog demo"));
+
+		//XORNEAT
+		Button demoButton = new Button("XORNEAT", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
+
+					public void onSuccess() {
+						new XORNEAT().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
+
+		//HopfieldAssociate
+		demoButton = new Button("HopfieldAssociate", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
+
+					public void onSuccess() {
+						new HopfieldAssociate().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
+
+		//SimpleKMeans
+		demoButton = new Button("SimpleKMeans", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
+
+					public void onSuccess() {
+						new SimpleKMeans().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
+
+		//SimpleSOM
+		demoButton = new Button("SimpleSOM", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
+
+					public void onSuccess() {
+						new SimpleSOM().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
 		
-		NEATPopulation pop = new NEATPopulation(2,1,1000);
-		pop.setInitialConnectionDensity(1.0);// not required, but speeds training
-		pop.reset();
+		//BoltzTSP
+		demoButton = new Button("BoltzTSP", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
 
-		CalculateScore score = new TrainingSetScore(trainingSet);
+					public void onSuccess() {
+						new BoltzTSP().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
 		
-		EvolutionaryAlgorithm train = NEATUtil.constructNEATTrainer(pop,score);
+		//PredictSunspotSVM
+		demoButton = new Button("PredictSunspotSVM", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
 
-		// train the neural network
-		train(train,0.01,pop,trainingSet);
+					public void onSuccess() {
+						new PredictSunspotSVM().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
 
 	}
 
-	private void train(final EvolutionaryAlgorithm train, final double error, final NEATPopulation pop, final MLDataSet trainingSet) {
-
-		if(train.getError() > error) {
-
-			Scheduler.get().scheduleDeferred(new Command() {
-				public void execute () {
-
-					train.iteration();
-					panel.add(new Label("Epoch #" + train.getIteration() + " Error:" + train.getError()+ ", Species:" + pop.getSpecies().size()));
-					train(train,error,pop,trainingSet);
-
-				}
-			});
-		}
-		else {
-			finishTraining(train,error,pop,trainingSet);
-		}
-
-	}
-
-	private void finishTraining(final EvolutionaryAlgorithm train, final double error, final NEATPopulation pop, final MLDataSet trainingSet) {
-
-		NEATNetwork network = (NEATNetwork)train.getCODEC().decode(train.getBestGenome());
-
-		// test the neural network
-		panel.add(new Label("Neural Network Results:"));
-		//		System.out.println("Neural Network Results:");
-		ArrayList<String> responses = EncogUtility.evaluate(network, trainingSet);
-		//		EncogUtility.evaluate(network, trainingSet);
-
-		for(String s : responses) {
-			panel.add(new Label(s));
-		}
-
-		Encog.getInstance().shutdown();
-		
-	}
 }

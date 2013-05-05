@@ -23,11 +23,6 @@
  */
 package gwtcog.core.neural.neat.training.opp;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
@@ -35,6 +30,11 @@ import gwtcog.core.neural.neat.NEATGenomeFactory;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Crossover is performed by mixing the link genes between the parents to

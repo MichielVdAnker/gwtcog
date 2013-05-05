@@ -23,10 +23,6 @@
  */
 package gwtcog.core.neural.freeform.training;
 
-import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
-
 import gwtcog.core.engine.network.activation.ActivationSigmoid;
 import gwtcog.core.mathutil.error.ErrorCalculation;
 import gwtcog.core.ml.MLMethod;
@@ -39,6 +35,10 @@ import gwtcog.core.neural.freeform.FreeformConnection;
 import gwtcog.core.neural.freeform.FreeformNetwork;
 import gwtcog.core.neural.freeform.FreeformNeuron;
 import gwtcog.core.neural.freeform.task.ConnectionTask;
+
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class FreeformPropagationTraining extends BasicTraining
 		implements Serializable {

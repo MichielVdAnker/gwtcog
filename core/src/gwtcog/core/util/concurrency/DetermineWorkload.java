@@ -23,11 +23,11 @@
  */
 package gwtcog.core.util.concurrency;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.IntRange;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Used by several Encog training methods to break up a workload. Can also be

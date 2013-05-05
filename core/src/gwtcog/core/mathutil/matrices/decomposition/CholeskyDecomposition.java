@@ -23,10 +23,10 @@
  */
 package gwtcog.core.mathutil.matrices.decomposition;
 
-import java.io.Serializable;
-
 import gwtcog.core.mathutil.matrices.Matrix;
 import gwtcog.core.mathutil.matrices.MatrixError;
+
+import java.io.Serializable;
 
 /**
  * 

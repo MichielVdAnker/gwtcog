@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.species;
 
-import java.util.List;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.population.Population;
+
+import java.util.List;
 
 /**
  * Defines a species.

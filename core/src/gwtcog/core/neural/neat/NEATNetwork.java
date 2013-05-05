@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.neat;
 
-import java.io.Serializable;
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.ml.MLError;
 import gwtcog.core.ml.MLRegression;
@@ -34,6 +31,9 @@ import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLData;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.simple.EncogUtility;
+
+import java.io.Serializable;
+import java.util.List;
 
 /**
  * NEAT networks relieve the programmer of the need to define the hidden layer

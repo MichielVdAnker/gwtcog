@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.networks.training.concurrent;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.NullStatusReportable;
 import gwtcog.core.StatusReportable;
@@ -33,6 +30,9 @@ import gwtcog.core.neural.NeuralNetworkError;
 import gwtcog.core.neural.networks.training.concurrent.jobs.TrainingJob;
 import gwtcog.core.neural.networks.training.concurrent.performers.ConcurrentTrainingPerformer;
 import gwtcog.core.neural.networks.training.concurrent.performers.ConcurrentTrainingPerformerCPU;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Concurrent training manager. This class allows you to queue up network

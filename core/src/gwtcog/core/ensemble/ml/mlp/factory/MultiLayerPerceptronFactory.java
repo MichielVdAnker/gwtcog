@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ensemble.ml.mlp.factory;
 
-import java.util.Collection;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.ensemble.EnsembleMLMethodFactory;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.layers.BasicLayer;
+
+import java.util.Collection;
 
 public class MultiLayerPerceptronFactory implements EnsembleMLMethodFactory {
 

@@ -23,10 +23,10 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.neural.freeform.FreeformConnection;
 import gwtcog.core.neural.freeform.FreeformNeuron;
+
+import java.io.Serializable;
 
 /**
  * A basic freeform connection.

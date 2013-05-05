@@ -23,12 +23,6 @@
  */
 package gwtcog.core.ml.prg;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
 import gwtcog.core.ml.MLError;
 import gwtcog.core.ml.MLRegression;
 import gwtcog.core.ml.data.MLData;
@@ -51,6 +45,12 @@ import gwtcog.core.parse.expression.epl.ParseEPL;
 import gwtcog.core.parse.expression.epl.RenderEPL;
 import gwtcog.core.parse.expression.rpn.RenderRPN;
 import gwtcog.core.util.simple.EncogUtility;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 /**
  * Holds an Encog Programming Language (EPL) program. A Encog program is

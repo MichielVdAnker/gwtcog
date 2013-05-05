@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.factory.parse.ArchitectureLayer;
 import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.neural.pattern.SOMPattern;
+
+import java.util.List;
 
 /**
  * A factory that is used to produce self-organizing maps.

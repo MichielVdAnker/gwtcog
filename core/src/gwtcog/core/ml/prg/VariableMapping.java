@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.prg;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.io.Serializable;
 
 /**
  * A variable mapping defines the type for each of the variables in an Encog

@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.world.basic;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import gwtcog.core.ml.world.State;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.Format;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BasicState implements State {
 

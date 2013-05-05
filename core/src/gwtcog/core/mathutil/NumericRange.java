@@ -23,9 +23,9 @@
  */
 package gwtcog.core.mathutil;
 
-import java.util.List;
-
 import gwtcog.core.util.Format;
+
+import java.util.List;
 
 /**
  * A numeric range has a high, low, mean, root-mean-square, standard deviation,

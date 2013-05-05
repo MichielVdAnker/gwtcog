@@ -23,11 +23,11 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.neural.freeform.InputSummation;
 import gwtcog.core.neural.freeform.factory.InputSummationFactory;
+
+import java.io.Serializable;
 
 /**
  * A factory to create BasicFactivationSUmmation objects.

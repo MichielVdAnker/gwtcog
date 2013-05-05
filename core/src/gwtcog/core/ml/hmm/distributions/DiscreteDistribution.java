@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.hmm.distributions;
 
-import java.util.Arrays;
-
 import gwtcog.core.CloneTool;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLData;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
+
+import java.util.Arrays;
 
 /**
  * A discrete distribution is a distribution with a finite set of states that it

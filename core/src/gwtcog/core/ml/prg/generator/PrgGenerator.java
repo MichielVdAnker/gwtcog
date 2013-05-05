@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.prg.generator;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.population.PopulationGenerator;
 import gwtcog.core.ml.prg.EncogProgram;
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * Generate a random Encog Program.

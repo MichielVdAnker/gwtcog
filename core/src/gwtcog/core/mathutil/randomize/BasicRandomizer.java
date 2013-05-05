@@ -23,12 +23,12 @@
  */
 package gwtcog.core.mathutil.randomize;
 
-import java.util.Random;
-
 import gwtcog.core.mathutil.matrices.Matrix;
 import gwtcog.core.ml.MLEncodable;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.neural.networks.BasicNetwork;
+
+import java.util.Random;
 
 /**
  * Provides basic functionality that most randomizers will need.

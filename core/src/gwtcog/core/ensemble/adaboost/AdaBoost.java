@@ -23,22 +23,22 @@
  */
 package gwtcog.core.ensemble.adaboost;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.Ensemble;
 import gwtcog.core.ensemble.EnsembleAggregator;
 import gwtcog.core.ensemble.EnsembleML;
 import gwtcog.core.ensemble.EnsembleMLMethodFactory;
 import gwtcog.core.ensemble.EnsembleTrainFactory;
 import gwtcog.core.ensemble.EnsembleTypes;
-import gwtcog.core.ensemble.GenericEnsembleML;
 import gwtcog.core.ensemble.EnsembleTypes.ProblemType;
+import gwtcog.core.ensemble.GenericEnsembleML;
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ensemble.data.factories.ResamplingDataSetFactory;
 import gwtcog.core.mathutil.VectorAlgebra;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.train.MLTrain;
+
+import java.util.ArrayList;
 
 public class AdaBoost extends Ensemble {
 

@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.schedule;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import gwtcog.core.ml.graph.BasicEdge;
 import gwtcog.core.ml.graph.BasicGraph;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ScheduleGraph extends BasicGraph {
 

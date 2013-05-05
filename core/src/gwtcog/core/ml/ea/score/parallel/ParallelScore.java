@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.ea.score.parallel;
 
-import java.util.List;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.ea.codec.GeneticCODEC;
 import gwtcog.core.ml.ea.genome.Genome;
@@ -32,6 +30,8 @@ import gwtcog.core.ml.ea.population.Population;
 import gwtcog.core.ml.ea.score.AdjustScore;
 import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.util.concurrency.MultiThreadable;
+
+import java.util.List;
 
 /**
  * This class is used to calculate the scores for an entire population. This is

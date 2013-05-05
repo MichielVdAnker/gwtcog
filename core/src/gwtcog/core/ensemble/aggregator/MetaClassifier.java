@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ensemble.aggregator;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.EnsembleAggregator;
 import gwtcog.core.ensemble.EnsembleML;
 import gwtcog.core.ensemble.EnsembleMLMethodFactory;
@@ -33,6 +31,8 @@ import gwtcog.core.ensemble.GenericEnsembleML;
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.basic.BasicMLData;
+
+import java.util.ArrayList;
 
 public class MetaClassifier implements EnsembleAggregator {
 

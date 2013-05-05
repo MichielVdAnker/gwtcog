@@ -23,10 +23,10 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.neural.freeform.FreeformLayer;
 import gwtcog.core.neural.freeform.factory.FreeformLayerFactory;
+
+import java.io.Serializable;
 
 /**
  * A factory that creates BasicFreeformLayer objects.

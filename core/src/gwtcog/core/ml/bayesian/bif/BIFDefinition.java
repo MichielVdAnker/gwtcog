@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.bayesian.bif;
 
+import gwtcog.core.util.csv.CSVFormat;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.util.csv.CSVFormat;
 
 /**
  * Holds a BIF definition.

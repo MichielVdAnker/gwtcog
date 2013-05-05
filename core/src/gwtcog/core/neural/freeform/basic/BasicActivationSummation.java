@@ -23,13 +23,13 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.neural.freeform.FreeformConnection;
 import gwtcog.core.neural.freeform.InputSummation;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Provides a basic implementation of an input summation. The inputs are summed

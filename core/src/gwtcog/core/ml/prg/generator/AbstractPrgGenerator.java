@@ -23,12 +23,6 @@
  */
 package gwtcog.core.ml.prg.generator;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.randomize.factory.BasicRandomFactory;
 import gwtcog.core.mathutil.randomize.factory.RandomFactory;
@@ -45,6 +39,12 @@ import gwtcog.core.ml.prg.extension.ProgramExtensionTemplate;
 import gwtcog.core.ml.prg.train.PrgPopulation;
 import gwtcog.core.ml.prg.train.ZeroEvalScoreFunction;
 import gwtcog.core.util.concurrency.MultiThreadable;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
 
 /**
  * The abstract base for Full and Grow program generation.

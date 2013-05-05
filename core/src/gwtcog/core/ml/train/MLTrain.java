@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.train;
 
-import java.util.List;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.TrainingImplementationType;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
+
+import java.util.List;
 
 /**
  * Defines a training method for a machine learning method. Most MLMethod

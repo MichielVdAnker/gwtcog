@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.rbf.RBFEnum;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.factory.parse.ArchitectureLayer;
 import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.neural.rbf.RBFNetwork;
+
+import java.util.List;
 
 /**
  * A factory that creates simple recurrent neural networks (SRN's), i.e.

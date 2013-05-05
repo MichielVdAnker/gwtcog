@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.hmm.distributions;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
+
+import java.io.Serializable;
 
 /**
  * This class represents a "state distribution". This is the means by which the

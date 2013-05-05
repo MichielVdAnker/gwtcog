@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.data.buffer.codec;
 
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.util.EngineArray;
+
+import java.util.Iterator;
 
 /**
  * A CODEC that works with the NeuralDataSet class.

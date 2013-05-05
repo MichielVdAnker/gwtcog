@@ -24,10 +24,6 @@
 package gwtcog.core.neural.flat;
 
 //import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import gwtcog.core.Encog;
 import gwtcog.core.EncogError;
 import gwtcog.core.engine.network.activation.ActivationFunction;
@@ -40,6 +36,10 @@ import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.util.EngineArray;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Implements a flat (vector based) neural network in the Encog Engine. This is

@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.genetic.mutate;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.ml.genetic.genome.DoubleArrayGenome;
+
+import java.util.Random;
 
 /**
  * A simple mutation based on random numbers.

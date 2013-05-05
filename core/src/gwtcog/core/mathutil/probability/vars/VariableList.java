@@ -23,12 +23,12 @@
  */
 package gwtcog.core.mathutil.probability.vars;
 
+import gwtcog.core.ml.bayesian.BayesianError;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import gwtcog.core.ml.bayesian.BayesianError;
 
 public class VariableList {
 	private final List<RandomVariable> variables = new ArrayList<RandomVariable>();

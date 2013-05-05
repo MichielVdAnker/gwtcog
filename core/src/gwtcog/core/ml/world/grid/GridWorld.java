@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.world.grid;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.mathutil.EncogMath;
 import gwtcog.core.ml.world.Action;
 import gwtcog.core.ml.world.State;
 import gwtcog.core.ml.world.basic.BasicAction;
 import gwtcog.core.ml.world.basic.BasicWorld;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GridWorld extends BasicWorld {
 

@@ -23,14 +23,14 @@
  */
 package gwtcog.core.neural.neat.training.opp.links;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Select a fixed number of link genes. If the genome does not have enough links

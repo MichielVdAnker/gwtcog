@@ -23,9 +23,9 @@
  */
 package gwtcog.core.mathutil.dimension;
 
-import java.util.Arrays;
-
 import gwtcog.core.CloneTool;
+
+import java.util.Arrays;
 
 /**
  * Handle multi-dimensional integer-based dimensions. Depending on how the

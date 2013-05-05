@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.bayesian.table;
 
-import java.io.Serializable;
-
 import gwtcog.core.Encog;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
 
 /**
  * A line from a Bayesian truth table.

@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.ea.population;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
+
+import java.util.Random;
 
 /**
  * Generate a random population.

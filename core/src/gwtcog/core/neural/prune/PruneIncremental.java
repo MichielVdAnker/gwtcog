@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.prune;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.StatusReportable;
 import gwtcog.core.ml.data.MLDataSet;
@@ -38,6 +35,9 @@ import gwtcog.core.neural.pattern.NeuralNetworkPattern;
 import gwtcog.core.util.concurrency.job.ConcurrentJob;
 import gwtcog.core.util.concurrency.job.JobUnitContext;
 import gwtcog.core.util.logging.EncogLogging;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class is used to help determine the optimal configuration for the hidden

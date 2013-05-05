@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.freeform.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.neural.freeform.FreeformContextNeuron;
 import gwtcog.core.neural.freeform.FreeformNeuron;
 import gwtcog.core.neural.freeform.InputSummation;
 import gwtcog.core.neural.freeform.factory.FreeformNeuronFactory;
+
+import java.io.Serializable;
 
 /**
  * A factory to create BasicFreeformNeuron objects.

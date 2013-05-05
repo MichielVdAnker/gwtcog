@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.prg;
 
+import gwtcog.core.ml.prg.expvalue.ExpressionValue;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 
 /**
  * This class stores the actual variable values for an Encog Program. The

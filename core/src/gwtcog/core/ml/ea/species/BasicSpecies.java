@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.ea.species;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.population.Population;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Provides basic functionality for a species.

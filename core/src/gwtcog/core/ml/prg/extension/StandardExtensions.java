@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.prg.extension;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
 import gwtcog.core.ml.prg.EncogProgramContext;
@@ -35,6 +32,9 @@ import gwtcog.core.ml.prg.VariableMapping;
 import gwtcog.core.ml.prg.expvalue.EvaluateExpr;
 import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * This class defines the standard opcodes for Encog programs.

@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.data.buffer;
 
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLDataError;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
+
+import java.util.Iterator;
 
 /**
  * An iterator for the BufferedNeuralDataSet.

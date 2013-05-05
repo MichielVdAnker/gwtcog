@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ensemble.data.factories;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ml.data.MLDataSet;
+
+import java.util.ArrayList;
 
 public abstract class EnsembleDataSetFactory {
 

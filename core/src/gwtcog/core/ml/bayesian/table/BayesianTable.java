@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.bayesian.table;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.Encog;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.query.enumerate.EnumerationQuery;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Holds a Bayesian truth table.

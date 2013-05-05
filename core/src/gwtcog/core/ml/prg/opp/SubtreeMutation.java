@@ -23,10 +23,6 @@
  */
 package gwtcog.core.ml.prg.opp;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
@@ -36,6 +32,10 @@ import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
 import gwtcog.core.ml.prg.generator.PrgGenerator;
 import gwtcog.core.ml.prg.generator.PrgGrowGenerator;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Perform a type-safe subtree mutation. The mutation point is chosen randomly,

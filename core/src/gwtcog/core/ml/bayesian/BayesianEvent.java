@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.bayesian;
 
+import gwtcog.core.ml.bayesian.table.BayesianTable;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
-
-import gwtcog.core.ml.bayesian.table.BayesianTable;
 
 /**
  * Events make up a Bayesian network. Each evidence or outcome event usually

@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.opp;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.util.Random;
 
 /**
  * An evolutionary operator is used to create new offspring genomes based on

@@ -23,10 +23,10 @@
  */
 package gwtcog.core.persist;
 
+import gwtcog.core.SimpleName;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import gwtcog.core.SimpleName;
 
 /**
  * Registry to hold persistors.  This is a singleton.

@@ -23,15 +23,15 @@
  */
 package gwtcog.core.ml.kmeans;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.MLCluster;
 import gwtcog.core.ml.MLClustering;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.util.kmeans.KMeansUtil;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class performs a basic K-Means clustering. This class can be used on

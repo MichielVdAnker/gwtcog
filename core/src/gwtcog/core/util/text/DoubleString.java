@@ -23,10 +23,10 @@
  */
 package gwtcog.core.util.text;
 
-import java.io.UnsupportedEncodingException;
-
 import gwtcog.core.Encog;
 import gwtcog.core.EncogError;
+
+import java.io.UnsupportedEncodingException;
 
 public class DoubleString {
 	

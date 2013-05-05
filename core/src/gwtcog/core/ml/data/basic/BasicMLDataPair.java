@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.data.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.util.Format;
 import gwtcog.core.util.kmeans.Centroid;
+
+import java.io.Serializable;
 
 /**
  * A basic implementation of the MLDataPair interface. This implementation

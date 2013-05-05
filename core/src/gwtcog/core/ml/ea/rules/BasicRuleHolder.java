@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.rules;
 
+import gwtcog.core.ml.ea.genome.Genome;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.ml.ea.genome.Genome;
 
 public class BasicRuleHolder implements RuleHolder {
 	/**

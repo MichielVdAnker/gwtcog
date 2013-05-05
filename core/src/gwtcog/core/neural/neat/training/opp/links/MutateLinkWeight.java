@@ -23,10 +23,10 @@
  */
 package gwtcog.core.neural.neat.training.opp.links;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
+
+import java.util.Random;
 
 /**
  * This interface defines various ways that a NEAT network can have its link

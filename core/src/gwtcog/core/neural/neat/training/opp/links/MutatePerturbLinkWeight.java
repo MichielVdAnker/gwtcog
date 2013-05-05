@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.neat.training.opp.links;
 
-import java.util.Random;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
+
+import java.util.Random;
 
 /**
  * Mutate weight links by perturbing their weights. This will be done by adding

@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.factory.parse;
 
+import gwtcog.core.EncogError;
+import gwtcog.core.util.SimpleParser;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import gwtcog.core.EncogError;
-import gwtcog.core.util.SimpleParser;
 
 /**
  * This class is used to parse a Encog architecture string.

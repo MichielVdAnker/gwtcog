@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.train;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.TrainingImplementationType;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.ml.train.strategy.end.EndTrainingStrategy;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * An abstract class that implements basic training for most training

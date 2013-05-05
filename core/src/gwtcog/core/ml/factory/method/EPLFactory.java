@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.Map;
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.factory.MLMethodFactory;
@@ -35,6 +32,9 @@ import gwtcog.core.ml.prg.extension.StandardExtensions;
 import gwtcog.core.ml.prg.generator.RampedHalfAndHalf;
 import gwtcog.core.ml.prg.train.PrgPopulation;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
+import java.util.Random;
 
 public class EPLFactory {
 	/**

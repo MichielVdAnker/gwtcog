@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.bayesian.parse;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A probability that has been parsed. 

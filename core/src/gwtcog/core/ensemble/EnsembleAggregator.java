@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ensemble;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ml.data.MLData;
+
+import java.util.ArrayList;
 
 public interface EnsembleAggregator {
 

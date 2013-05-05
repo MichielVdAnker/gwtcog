@@ -23,10 +23,10 @@
  */
 package gwtcog.core.util.csv;
 
+import gwtcog.core.util.SimpleParser;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.util.SimpleParser;
 
 public class ParseCSVLine {
 	

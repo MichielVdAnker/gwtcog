@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.data.sparse;
 
-import java.io.Serializable;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataError;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.kmeans.Centroid;
+
+import java.io.Serializable;
 
 public class SparseMLData implements MLData, Serializable, Cloneable {
 

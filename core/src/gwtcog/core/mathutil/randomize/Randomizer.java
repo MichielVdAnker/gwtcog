@@ -23,10 +23,10 @@
  */
 package gwtcog.core.mathutil.randomize;
 
-import java.util.Random;
-
 import gwtcog.core.mathutil.matrices.Matrix;
 import gwtcog.core.ml.MLMethod;
+
+import java.util.Random;
 
 /**
  * Defines the interface for a class that is capable of randomizing the weights

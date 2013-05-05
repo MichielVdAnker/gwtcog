@@ -23,15 +23,15 @@
  */
 package gwtcog.core.neural.hyperneat;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.neural.neat.NEATGenomeFactory;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.util.List;
+import java.util.Random;
 
 public class FactorHyperNEATGenome implements NEATGenomeFactory {
 	@Override

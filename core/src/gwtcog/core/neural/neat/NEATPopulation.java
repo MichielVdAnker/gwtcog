@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.neat;
 
-import java.io.Serializable;
-import java.util.Random;
-
 import gwtcog.core.Encog;
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.engine.network.activation.ActivationSteepenedSigmoid;
@@ -48,6 +45,9 @@ import gwtcog.core.neural.neat.training.NEATInnovationList;
 import gwtcog.core.util.identity.BasicGenerateID;
 import gwtcog.core.util.identity.GenerateID;
 import gwtcog.core.util.obj.ChooseObject;
+
+import java.io.Serializable;
+import java.util.Random;
 
 /**
  * A population for a NEAT or HyperNEAT system. This population holds the

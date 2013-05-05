@@ -23,14 +23,14 @@
  */
 package gwtcog.core.neural.networks.training.concurrent.jobs;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.ml.train.strategy.end.EndTrainingStrategy;
 import gwtcog.core.neural.networks.BasicNetwork;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Base class for all concurrent training jobs.

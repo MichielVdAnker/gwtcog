@@ -23,11 +23,6 @@
  */
 package gwtcog.core.ml.ea.species;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import gwtcog.core.Encog;
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.ea.genome.Genome;
@@ -36,6 +31,11 @@ import gwtcog.core.ml.ea.sort.SortGenomesForSpecies;
 import gwtcog.core.ml.ea.sort.SpeciesComparator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.ml.genetic.GeneticError;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Speciate based on threshold. Any genomes with a compatability score below a

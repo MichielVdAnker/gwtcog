@@ -23,13 +23,6 @@
  */
 package gwtcog.core.neural.neat;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.ea.codec.GeneticCODEC;
@@ -39,6 +32,13 @@ import gwtcog.core.neural.NeuralNetworkError;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * This CODEC is used to create phenomes (NEATNetwork) objects using a genome

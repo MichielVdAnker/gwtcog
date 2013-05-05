@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.prg.extension;
 
+import gwtcog.core.ml.ea.exception.EACompileError;
+import gwtcog.core.ml.prg.EncogProgramContext;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import gwtcog.core.ml.ea.exception.EACompileError;
-import gwtcog.core.ml.prg.EncogProgramContext;
 
 /**
  * Holds all known EPL opcodes. Extension programs should add new opcodes here.

@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ensemble.data.factories;
 
-import java.util.Random;
-
 import gwtcog.core.ensemble.data.EnsembleDataSet;
+
+import java.util.Random;
 
 public class ResamplingDataSetFactory extends EnsembleDataSetFactory {
 

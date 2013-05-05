@@ -23,12 +23,12 @@
  */
 package gwtcog.core.util.obj;
 
+import gwtcog.core.mathutil.randomize.RandomChoice;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import gwtcog.core.mathutil.randomize.RandomChoice;
 
 public class ChooseObject<T> implements Serializable {
 	/**

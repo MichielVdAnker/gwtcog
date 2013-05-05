@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.graph;
 
+import gwtcog.core.EncogError;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import gwtcog.core.EncogError;
 
 public class BasicNode {
 	private final List<BasicEdge> connections = new ArrayList<BasicEdge>();

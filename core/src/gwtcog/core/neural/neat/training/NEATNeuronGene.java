@@ -23,10 +23,10 @@
  */
 package gwtcog.core.neural.neat.training;
 
-import java.io.Serializable;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.neural.neat.NEATNeuronType;
+
+import java.io.Serializable;
 
 /**
  * Implements a NEAT neuron gene.

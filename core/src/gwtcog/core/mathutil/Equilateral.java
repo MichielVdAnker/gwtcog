@@ -23,9 +23,9 @@
  */
 package gwtcog.core.mathutil;
 
-import java.io.Serializable;
-
 import gwtcog.core.EncogError;
+
+import java.io.Serializable;
 
 /**
  * Used to produce an array of activations to classify data into groups. This

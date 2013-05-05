@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.bayesian.parse;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
 import gwtcog.core.util.SimpleParser;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Used to parse probability strings for the Bayes networks.

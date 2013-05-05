@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.graph.search;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.graph.BasicNode;
 import gwtcog.core.ml.graph.BasicPath;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FrontierHolder {
 	

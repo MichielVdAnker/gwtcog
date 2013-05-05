@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.hmm.alog;
 
-import java.util.Iterator;
-
 import gwtcog.core.CloneTool;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.hmm.HiddenMarkovModel;
+
+import java.util.Iterator;
 
 /**
  * The Viterbi algorithm is used to find the most likely sequence of hidden

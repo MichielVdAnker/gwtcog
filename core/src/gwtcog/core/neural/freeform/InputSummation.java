@@ -23,9 +23,9 @@
  */
 package gwtcog.core.neural.freeform;
 
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
+
+import java.util.List;
 
 /**
  * Specifies how the inputs to a neuron are to be summed.

@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.data.basic;
 
-import java.io.Serializable;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.util.kmeans.Centroid;
+
+import java.io.Serializable;
 
 /**
  * Basic implementation of the MLData interface that stores the data in an

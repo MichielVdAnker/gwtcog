@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.ea.train.basic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.TrainingImplementationType;
@@ -36,6 +33,9 @@ import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.neural.networks.training.TrainingError;
 import gwtcog.core.neural.networks.training.TrainingSetScore;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Provides a MLTrain compatible class that can be used to train genomes.

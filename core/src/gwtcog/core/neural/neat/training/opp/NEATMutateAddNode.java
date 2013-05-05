@@ -23,8 +23,6 @@
  */
 package gwtcog.core.neural.neat.training.opp;
 
-import java.util.Random;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
 import gwtcog.core.ml.ea.genome.Genome;
@@ -34,6 +32,8 @@ import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATInnovation;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
+
+import java.util.Random;
 
 /**
  * Mutate a genome by adding a new node. To do this a random link is chosen. The

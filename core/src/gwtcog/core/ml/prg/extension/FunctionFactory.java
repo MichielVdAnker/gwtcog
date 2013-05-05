@@ -23,18 +23,18 @@
  */
 package gwtcog.core.ml.prg.extension;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.ml.ea.exception.EACompileError;
 import gwtcog.core.ml.prg.EncogProgram;
 import gwtcog.core.ml.prg.EncogProgramContext;
 import gwtcog.core.ml.prg.ExpressionError;
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * A function factory maps the opcodes contained in the EncogOpcodeRegistry into

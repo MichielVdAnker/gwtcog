@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.ea.rules;
 
-import java.util.List;
-
 import gwtcog.core.ml.ea.genome.Genome;
+
+import java.util.List;
 
 public interface RuleHolder {
 	/**

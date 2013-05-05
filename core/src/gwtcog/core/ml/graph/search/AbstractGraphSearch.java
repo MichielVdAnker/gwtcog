@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.graph.search;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.graph.BasicEdge;
 import gwtcog.core.ml.graph.BasicGraph;
 import gwtcog.core.ml.graph.BasicNode;
 import gwtcog.core.ml.graph.BasicPath;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class AbstractGraphSearch implements GraphSearch {
 	

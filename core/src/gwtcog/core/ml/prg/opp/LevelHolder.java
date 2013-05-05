@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.prg.opp;
 
-import java.util.List;
-
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.util.List;
 
 /**
  * The level holder class is passed down as a tree is mutated. The level holder

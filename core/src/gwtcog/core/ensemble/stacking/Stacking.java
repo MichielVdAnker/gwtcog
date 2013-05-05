@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ensemble.stacking;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.Ensemble;
 import gwtcog.core.ensemble.EnsembleAggregator;
 import gwtcog.core.ensemble.EnsembleML;
@@ -33,6 +31,8 @@ import gwtcog.core.ensemble.EnsembleTrainFactory;
 import gwtcog.core.ensemble.EnsembleTypes;
 import gwtcog.core.ensemble.EnsembleTypes.ProblemType;
 import gwtcog.core.ensemble.data.factories.WrappingNonResamplingDataSetFactory;
+
+import java.util.ArrayList;
 
 public class Stacking extends Ensemble {
 

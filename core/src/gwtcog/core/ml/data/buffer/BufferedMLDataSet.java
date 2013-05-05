@@ -24,17 +24,17 @@
 package gwtcog.core.ml.data.buffer;
 
 //import java.io.File;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataError;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.ml.data.basic.BasicMLDataSet;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 //import org.encog.ml.data.MLData;
 //import org.encog.ml.data.MLDataError;

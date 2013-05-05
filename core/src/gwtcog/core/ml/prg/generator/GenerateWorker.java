@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.prg.generator;
 
-import java.util.Random;
-
 import gwtcog.core.ml.prg.EncogProgram;
 import gwtcog.core.ml.prg.train.PrgPopulation;
+
+import java.util.Random;
 
 /**
  * Used to thread the generation process.

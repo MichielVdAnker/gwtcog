@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.train;
 
-import java.util.Map;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.factory.MLTrainFactory;
@@ -33,6 +31,8 @@ import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.training.propagation.back.Backpropagation;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
 
 /**
  * A factory for backpropagation training.

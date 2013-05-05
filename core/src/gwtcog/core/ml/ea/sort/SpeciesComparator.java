@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.sort;
 
-import java.util.Comparator;
-
 import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.util.Comparator;
 
 /**
  * This comparator is used to compare two species. This is done by comparing the

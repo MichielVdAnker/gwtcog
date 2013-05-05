@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.hmm.distributions;
 
-import java.util.Arrays;
-import java.util.Random;
-
 import gwtcog.core.mathutil.matrices.Matrix;
 import gwtcog.core.mathutil.matrices.MatrixMath;
 import gwtcog.core.mathutil.matrices.decomposition.CholeskyDecomposition;
@@ -34,6 +31,9 @@ import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLData;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.util.EngineArray;
+
+import java.util.Arrays;
+import java.util.Random;
 
 /**
  * A continuous distribution represents an infinite range of choices between two

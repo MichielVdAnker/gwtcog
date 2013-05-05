@@ -23,10 +23,6 @@
  */
 package gwtcog.core.ml.bayesian.query.enumerate;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.Encog;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
@@ -36,6 +32,10 @@ import gwtcog.core.ml.bayesian.query.BasicQuery;
 import gwtcog.core.ml.bayesian.query.sample.EventState;
 import gwtcog.core.ml.bayesian.table.TableLine;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * An enumeration query allows probabilistic queries on a Bayesian network.

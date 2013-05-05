@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.neat.training.opp;
 
-import java.util.Random;
-
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
+
+import java.util.Random;
 
 /**
  * Mutate a genome by removing a random link. Do not remove links from genomes

@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.ea.population;
 
-import java.io.Serializable;
-import java.util.List;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.genome.GenomeFactory;
 import gwtcog.core.ml.ea.species.Species;
+
+import java.io.Serializable;
+import java.util.List;
 
 /**
  * Defines a population of genomes.

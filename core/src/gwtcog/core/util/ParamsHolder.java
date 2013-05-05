@@ -23,10 +23,10 @@
  */
 package gwtcog.core.util;
 
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.util.Map;
 
 /**
  * A class that can be used to parse parameters stored in a map.  Allows the 

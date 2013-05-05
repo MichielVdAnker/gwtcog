@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.ml.MLMethod;
@@ -33,6 +31,8 @@ import gwtcog.core.ml.factory.MLMethodFactory;
 import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
 
 /**
  * A factor to create feedforward networks.

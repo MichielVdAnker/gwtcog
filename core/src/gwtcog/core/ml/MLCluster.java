@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml;
 
-import java.util.List;
-
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataSet;
+
+import java.util.List;
 
 /**
  * Defines a cluster. Usually used with the MLClustering method to break input

@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.bayesian.query.sample;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
 import gwtcog.core.ml.bayesian.query.BasicQuery;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
 
 /**
  * A sampling query allows probabilistic queries on a Bayesian network. Sampling

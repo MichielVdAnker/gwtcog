@@ -23,9 +23,9 @@
  */
 package gwtcog.core.mathutil.probability.vars;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.bayesian.BayesianNetwork;
+
+import java.io.Serializable;
 
 public class RandomVariable implements Serializable {
 	

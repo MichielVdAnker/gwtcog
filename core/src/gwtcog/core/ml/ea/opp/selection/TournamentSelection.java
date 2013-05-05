@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.ea.opp.selection;
 
-import java.io.Serializable;
-import java.util.Random;
-
 import gwtcog.core.mathutil.randomize.RangeRandomizer;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.ml.ea.train.basic.BasicEA;
+
+import java.io.Serializable;
+import java.util.Random;
 
 /**
  * Tournament select can be used to select a fit (or unfit) genome from a

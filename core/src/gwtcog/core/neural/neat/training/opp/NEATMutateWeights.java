@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.neat.training.opp;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.neural.neat.NEATPopulation;
@@ -33,6 +30,9 @@ import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.opp.links.MutateLinkWeight;
 import gwtcog.core.neural.neat.training.opp.links.SelectLinks;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * Mutate the weights of a genome. A method is select the links for mutation.

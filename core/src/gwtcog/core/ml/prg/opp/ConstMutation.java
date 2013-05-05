@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.prg.opp;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
@@ -34,6 +32,8 @@ import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 import gwtcog.core.ml.prg.extension.StandardExtensions;
 import gwtcog.core.ml.tree.TreeNode;
+
+import java.util.Random;
 
 /**
  * Mutate the constant nodes of an Encog program. This mutation only changes

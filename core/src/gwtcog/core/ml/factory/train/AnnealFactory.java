@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.train;
 
-import java.util.Map;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.data.MLDataSet;
@@ -36,6 +34,8 @@ import gwtcog.core.neural.networks.training.TrainingError;
 import gwtcog.core.neural.networks.training.TrainingSetScore;
 import gwtcog.core.neural.networks.training.anneal.NeuralSimulatedAnnealing;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
 
 /**
  * A factory to create simulated annealing trainers.

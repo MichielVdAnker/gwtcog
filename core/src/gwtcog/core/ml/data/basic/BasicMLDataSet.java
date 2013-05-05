@@ -23,16 +23,16 @@
  */
 package gwtcog.core.ml.data.basic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.util.EngineArray;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Stores data in an ArrayList. This class is memory based, so large enough

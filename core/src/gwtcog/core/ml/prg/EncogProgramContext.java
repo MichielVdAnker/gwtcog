@@ -23,18 +23,18 @@
  */
 package gwtcog.core.ml.prg;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 import gwtcog.core.ml.prg.expvalue.ValueType;
 import gwtcog.core.ml.prg.extension.FunctionFactory;
 import gwtcog.core.ml.prg.extension.StandardExtensions;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Every EncogProgram must belong to a context. When programs are in a

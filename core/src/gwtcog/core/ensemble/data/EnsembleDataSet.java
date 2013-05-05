@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ensemble.data;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * @author nitbix

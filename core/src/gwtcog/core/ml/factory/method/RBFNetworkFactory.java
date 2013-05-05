@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.mathutil.rbf.RBFEnum;
 import gwtcog.core.ml.MLMethod;
@@ -33,6 +31,8 @@ import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.neural.NeuralNetworkError;
 import gwtcog.core.neural.rbf.RBFNetwork;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.List;
 
 /**
  * A factory to create RBF networks.

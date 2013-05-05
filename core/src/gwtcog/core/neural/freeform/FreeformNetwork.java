@@ -23,11 +23,6 @@
  */
 package gwtcog.core.neural.freeform;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import gwtcog.core.Encog;
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.engine.network.activation.ActivationTANH;
@@ -55,6 +50,11 @@ import gwtcog.core.neural.freeform.task.NeuronTask;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.simple.EncogUtility;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Implements a freefrom neural network. A freeform neural network can represent

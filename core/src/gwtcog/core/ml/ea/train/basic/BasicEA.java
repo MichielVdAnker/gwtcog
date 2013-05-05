@@ -23,10 +23,6 @@
  */
 package gwtcog.core.ml.ea.train.basic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.Encog;
 import gwtcog.core.EncogError;
 import gwtcog.core.EncogShutdownTask;
@@ -57,6 +53,10 @@ import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.ml.genetic.GeneticError;
 import gwtcog.core.util.concurrency.MultiThreadable;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Provides a basic implementation of a multi-threaded Evolutionary Algorithm.

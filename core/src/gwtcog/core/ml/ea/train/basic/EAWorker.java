@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.ea.train.basic;
 
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.ea.exception.EARuntimeError;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.opp.EvolutionaryOperator;
 import gwtcog.core.ml.ea.species.Species;
+
+import java.util.Random;
 
 /**
  * A worker thread for an Evolutionary Algorithm.

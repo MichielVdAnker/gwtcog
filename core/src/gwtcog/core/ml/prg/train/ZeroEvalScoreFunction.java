@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.prg.train;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.basic.BasicMLData;
 import gwtcog.core.ml.prg.EncogProgram;
+
+import java.io.Serializable;
 
 /**
  * This is a very simple evaluation function that simply passes in all zeros for

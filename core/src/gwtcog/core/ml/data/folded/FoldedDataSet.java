@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.data.folded;
 
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
 import gwtcog.core.neural.networks.training.TrainingError;
+
+import java.util.Iterator;
 
 /**
  * A folded data set allows you to "fold" the data into several equal(or nearly

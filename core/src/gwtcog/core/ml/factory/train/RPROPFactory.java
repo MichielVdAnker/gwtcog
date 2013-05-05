@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.train;
 
-import java.util.Map;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.data.MLDataSet;
@@ -35,6 +33,8 @@ import gwtcog.core.neural.networks.ContainsFlat;
 import gwtcog.core.neural.networks.training.propagation.resilient.RPROPConst;
 import gwtcog.core.neural.networks.training.propagation.resilient.ResilientPropagation;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.Map;
 
 /**
  * A factory that creates RPROP trainers.

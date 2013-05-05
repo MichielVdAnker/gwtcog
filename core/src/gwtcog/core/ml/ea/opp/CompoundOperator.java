@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.ea.opp;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
 import gwtcog.core.util.obj.ObjectHolder;
+
+import java.util.Random;
 
 /**
  * A compound operator randomly chooses sub-operators to perform the actual

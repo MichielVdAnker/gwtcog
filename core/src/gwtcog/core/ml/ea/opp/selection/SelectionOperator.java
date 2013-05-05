@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.opp.selection;
 
-import java.util.Random;
-
 import gwtcog.core.ml.ea.species.Species;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.util.Random;
 
 /**
  * Provides the interface to a selection operator. This allows genomes to be

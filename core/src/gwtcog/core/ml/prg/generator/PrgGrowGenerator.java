@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.prg.generator;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.prg.EncogProgram;
 import gwtcog.core.ml.prg.EncogProgramContext;
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * The grow generator creates a random program by choosing a random node from

@@ -23,11 +23,11 @@
  */
 package gwtcog.core.neural.flat;
 
-import java.io.Serializable;
-
 import gwtcog.core.engine.network.activation.ActivationLinear;
 import gwtcog.core.mathutil.rbf.RadialBasisFunction;
 import gwtcog.core.util.EngineArray;
+
+import java.io.Serializable;
 
 /**
  * A flat network designed to handle an RBF.

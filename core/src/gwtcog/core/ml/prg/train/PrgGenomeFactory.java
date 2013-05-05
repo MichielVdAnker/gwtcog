@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.prg.train;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.genome.GenomeFactory;
 import gwtcog.core.ml.prg.EncogProgram;
 import gwtcog.core.ml.prg.EncogProgramContext;
 import gwtcog.core.ml.prg.EncogProgramVariables;
+
+import java.io.Serializable;
 
 /**
  * A GenomeFactory that creates EncogProgram genomes.

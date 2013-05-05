@@ -23,9 +23,6 @@
  */
 package gwtcog.core.ml.hmm.train.kmeans;
 
-import java.util.Collection;
-import java.util.List;
-
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.TrainingImplementationType;
 import gwtcog.core.ml.data.MLDataPair;
@@ -38,6 +35,9 @@ import gwtcog.core.ml.hmm.distributions.StateDistribution;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.ml.train.strategy.Strategy;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
+
+import java.util.Collection;
+import java.util.List;
 
 /**
  * Train a Hidden Markov Model (HMM) with the KMeans algorithm. Makes use of

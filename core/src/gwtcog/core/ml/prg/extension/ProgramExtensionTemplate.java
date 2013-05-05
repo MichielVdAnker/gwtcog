@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.prg.extension;
 
-import java.io.Serializable;
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.ml.prg.EncogProgramContext;
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ExpressionValue;
 import gwtcog.core.ml.prg.expvalue.ValueType;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Defines an opcode. Opcodes are used to extend Encog programs.

@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.prg.expvalue;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.ea.exception.EARuntimeError;
 import gwtcog.core.ml.prg.ExpressionError;
+
+import java.io.Serializable;
 
 /**
  * An EncogProgram expression value. These is how Encog stores variables and

@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.factory.parse.ArchitectureLayer;
@@ -34,6 +32,8 @@ import gwtcog.core.neural.pnn.BasicPNN;
 import gwtcog.core.neural.pnn.PNNKernelType;
 import gwtcog.core.neural.pnn.PNNOutputMode;
 import gwtcog.core.util.ParamsHolder;
+
+import java.util.List;
 
 /**
  * A factory to create PNN networks.

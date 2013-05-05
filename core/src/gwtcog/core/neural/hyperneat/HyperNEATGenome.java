@@ -23,9 +23,6 @@
  */
 package gwtcog.core.neural.hyperneat;
 
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.engine.network.activation.ActivationBipolarSteepenedSigmoid;
 import gwtcog.core.engine.network.activation.ActivationClippedLinear;
 import gwtcog.core.engine.network.activation.ActivationFunction;
@@ -36,6 +33,9 @@ import gwtcog.core.neural.neat.training.NEATGenome;
 import gwtcog.core.neural.neat.training.NEATLinkGene;
 import gwtcog.core.neural.neat.training.NEATNeuronGene;
 import gwtcog.core.util.obj.ChooseObject;
+
+import java.util.List;
+import java.util.Random;
 
 public class HyperNEATGenome extends NEATGenome {
 

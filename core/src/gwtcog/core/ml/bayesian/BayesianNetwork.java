@@ -23,14 +23,6 @@
  */
 package gwtcog.core.ml.bayesian;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import gwtcog.core.ml.BasicML;
 import gwtcog.core.ml.MLClassification;
 import gwtcog.core.ml.MLError;
@@ -47,6 +39,14 @@ import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.util.EngineArray;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * The Bayesian Network is a machine learning method that is based on

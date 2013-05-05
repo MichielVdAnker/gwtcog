@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.bayesian.query.sample;
 
-import java.io.Serializable;
-
 import gwtcog.core.Encog;
 import gwtcog.core.ml.bayesian.BayesianError;
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.EventType;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
 
 /**
  * Holds the state of an event during a query. This allows the event to actually

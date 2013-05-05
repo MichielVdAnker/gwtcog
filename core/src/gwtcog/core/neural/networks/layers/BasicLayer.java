@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.networks.layers;
 
-import java.io.Serializable;
-
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.engine.network.activation.ActivationTANH;
 import gwtcog.core.neural.flat.FlatLayer;
 import gwtcog.core.neural.networks.BasicNetwork;
+
+import java.io.Serializable;
 
 /**
  * Basic functionality that most of the neural layers require. The basic layer

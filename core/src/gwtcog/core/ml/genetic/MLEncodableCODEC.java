@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.genetic;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.MLEncodable;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.ea.codec.GeneticCODEC;
 import gwtcog.core.ml.ea.genome.Genome;
+
+import java.io.Serializable;
 
 public class MLEncodableCODEC implements GeneticCODEC, Serializable {
 

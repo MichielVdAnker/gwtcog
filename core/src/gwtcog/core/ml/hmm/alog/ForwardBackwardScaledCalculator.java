@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.hmm.alog;
 
-import java.util.Arrays;
-import java.util.EnumSet;
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.hmm.HiddenMarkovModel;
+
+import java.util.Arrays;
+import java.util.EnumSet;
+import java.util.Iterator;
 
 /**
  * The forward-backward algorithm is an inference algorithm for hidden Markov

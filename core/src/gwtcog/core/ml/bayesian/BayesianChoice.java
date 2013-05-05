@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.bayesian;
 
-import java.io.Serializable;
-
 import gwtcog.core.Encog;
 import gwtcog.core.util.csv.CSVFormat;
+
+import java.io.Serializable;
 
 /**
  * A choice in a Bayesian network. Choices can be either discrete or continuous.

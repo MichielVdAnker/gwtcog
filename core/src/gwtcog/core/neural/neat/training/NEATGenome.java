@@ -23,14 +23,6 @@
  */
 package gwtcog.core.neural.neat.training;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.SimpleName;
 import gwtcog.core.engine.network.activation.ActivationFunction;
@@ -40,6 +32,14 @@ import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.neural.neat.NEATNeuronType;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.util.Format;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 /**
  * Implements a NEAT genome. This is a "blueprint" for creating a neural

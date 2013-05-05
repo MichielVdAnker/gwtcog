@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.fitness;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.CalculateScore;
+
+import java.io.Serializable;
 
 public class FitnessObjective implements Serializable {
 	private final double weight;

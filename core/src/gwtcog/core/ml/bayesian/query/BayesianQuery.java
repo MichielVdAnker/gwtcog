@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.bayesian.query;
 
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.ml.bayesian.BayesianEvent;
 import gwtcog.core.ml.bayesian.BayesianNetwork;
 import gwtcog.core.ml.bayesian.EventType;
 import gwtcog.core.ml.bayesian.query.sample.EventState;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * A Bayesian query. This is used to query a Bayesian network and determine a

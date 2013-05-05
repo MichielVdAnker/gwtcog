@@ -23,10 +23,6 @@
  */
 package gwtcog.core.neural.networks.structure;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import gwtcog.core.engine.network.activation.ActivationLinear;
 import gwtcog.core.neural.NeuralNetworkError;
 import gwtcog.core.neural.flat.FlatLayer;
@@ -34,6 +30,10 @@ import gwtcog.core.neural.flat.FlatNetwork;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.layers.BasicLayer;
 import gwtcog.core.neural.networks.layers.Layer;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Holds "cached" information about the structure of the neural network. This is

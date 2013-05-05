@@ -23,10 +23,10 @@
  */
 package gwtcog.core.ml.ea.sort;
 
-import java.util.Comparator;
-
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.util.Comparator;
 
 /**
  * Sort the gnomes for species.  Sort first by score, second by birth generation.

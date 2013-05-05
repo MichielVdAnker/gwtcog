@@ -23,16 +23,16 @@
  */
 package gwtcog.core.ml.prg.extension;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.prg.EncogProgramContext;
 import gwtcog.core.ml.prg.ExpressionError;
 import gwtcog.core.ml.prg.ProgramNode;
 import gwtcog.core.ml.prg.expvalue.ValueType;
 import gwtcog.core.util.SimpleParser;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public abstract class BasicTemplate implements ProgramExtensionTemplate {
 	/**

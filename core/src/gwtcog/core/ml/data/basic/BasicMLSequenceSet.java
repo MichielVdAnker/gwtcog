@@ -23,12 +23,6 @@
  */
 package gwtcog.core.ml.data.basic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataError;
@@ -36,6 +30,12 @@ import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.MLSequenceSet;
 import gwtcog.core.util.EngineArray;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * A basic implementation of the MLSequenceSet.

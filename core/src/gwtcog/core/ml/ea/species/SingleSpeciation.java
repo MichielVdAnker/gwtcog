@@ -23,13 +23,13 @@
  */
 package gwtcog.core.ml.ea.species;
 
-import java.util.Collections;
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.sort.SortGenomesForSpecies;
 import gwtcog.core.ml.ea.train.EvolutionaryAlgorithm;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * This speciation strategy simply creates a single species that contains the

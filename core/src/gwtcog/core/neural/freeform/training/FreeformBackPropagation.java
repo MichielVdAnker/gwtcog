@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.freeform.training;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.neural.freeform.FreeformConnection;
 import gwtcog.core.neural.freeform.FreeformNetwork;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
+
+import java.io.Serializable;
 
 public class FreeformBackPropagation extends FreeformPropagationTraining
 		implements Serializable {

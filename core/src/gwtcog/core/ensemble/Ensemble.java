@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ensemble;
 
-import java.util.ArrayList;
-
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ensemble.data.factories.EnsembleDataSetFactory;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.basic.BasicMLData;
+
+import java.util.ArrayList;
 
 public abstract class Ensemble {
 

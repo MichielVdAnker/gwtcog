@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.prg.extension;
 
+import gwtcog.core.ml.prg.ExpressionError;
+import gwtcog.core.ml.prg.expvalue.ValueType;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import gwtcog.core.ml.prg.ExpressionError;
-import gwtcog.core.ml.prg.expvalue.ValueType;
 
 /**
  * Provides a template for parameters to the opcodes. This defines the accepted

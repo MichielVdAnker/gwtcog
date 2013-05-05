@@ -23,8 +23,6 @@
  */
 package gwtcog.core.neural.freeform.training;
 
-import java.io.Serializable;
-
 import gwtcog.core.mathutil.EncogMath;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.neural.freeform.FreeformConnection;
@@ -32,6 +30,8 @@ import gwtcog.core.neural.freeform.FreeformNetwork;
 import gwtcog.core.neural.freeform.task.ConnectionTask;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
 import gwtcog.core.neural.networks.training.propagation.resilient.RPROPConst;
+
+import java.io.Serializable;
 
 public class FreeformResilientPropagation extends FreeformPropagationTraining
 		implements Serializable {

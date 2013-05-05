@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ensemble.data.factories;
 
-import java.util.Random;
-
 import gwtcog.core.ensemble.data.EnsembleDataSet;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
+
+import java.util.Random;
 
 public class WeightedResamplingDataSetFactory extends EnsembleDataSetFactory {
 

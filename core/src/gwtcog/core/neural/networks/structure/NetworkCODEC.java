@@ -23,12 +23,12 @@
  */
 package gwtcog.core.neural.networks.structure;
 
-import java.util.Arrays;
-
 import gwtcog.core.ml.MLEncodable;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.neural.NeuralNetworkError;
 import gwtcog.core.neural.networks.BasicNetwork;
+
+import java.util.Arrays;
 
 /**
  * This class will extract the "long term memory" of a neural network, that is

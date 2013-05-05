@@ -23,9 +23,9 @@
  */
 package gwtcog.core.ml.ea.sort;
 
-import java.io.Serializable;
-
 import gwtcog.core.ml.ea.genome.Genome;
+
+import java.io.Serializable;
 
 /**
  * Use this comparator to maximize the score.

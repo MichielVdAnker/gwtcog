@@ -23,15 +23,15 @@
  */
 package gwtcog.core.ml.hmm.train.bw;
 
-import java.util.EnumSet;
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.ml.data.MLSequenceSet;
 import gwtcog.core.ml.hmm.HiddenMarkovModel;
 import gwtcog.core.ml.hmm.alog.ForwardBackwardCalculator;
 import gwtcog.core.ml.hmm.alog.ForwardBackwardScaledCalculator;
+
+import java.util.EnumSet;
+import java.util.Iterator;
 
 /**
  * Baum Welch Learning allows a HMM to be constructed from a series of sequence

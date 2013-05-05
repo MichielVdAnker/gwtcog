@@ -23,14 +23,14 @@
  */
 package gwtcog.core.ml.ea.score.parallel;
 
-import java.util.List;
-
 import gwtcog.core.ml.CalculateScore;
 import gwtcog.core.ml.MLMethod;
 import gwtcog.core.ml.ea.exception.EARuntimeError;
 import gwtcog.core.ml.ea.genome.Genome;
 import gwtcog.core.ml.ea.score.AdjustScore;
 import gwtcog.core.ml.ea.train.basic.BasicEA;
+
+import java.util.List;
 
 /**
  * An individual threadable task for the parallel score calculation.

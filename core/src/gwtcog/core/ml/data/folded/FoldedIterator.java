@@ -23,11 +23,11 @@
  */
 package gwtcog.core.ml.data.folded;
 
-import java.util.Iterator;
-
 import gwtcog.core.ml.data.MLDataError;
 import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.basic.BasicMLDataPair;
+
+import java.util.Iterator;
 
 /**
  * Used to iterate over a folded data set.

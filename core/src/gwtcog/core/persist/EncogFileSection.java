@@ -23,10 +23,6 @@
  */
 package gwtcog.core.persist;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import gwtcog.core.SimpleName;
 import gwtcog.core.engine.network.activation.ActivationFactory;
 import gwtcog.core.engine.network.activation.ActivationFunction;
@@ -34,6 +30,10 @@ import gwtcog.core.mathutil.matrices.Matrix;
 import gwtcog.core.util.csv.CSVFormat;
 import gwtcog.core.util.csv.NumberList;
 import gwtcog.core.util.csv.ParseCSVLine;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * This class is used internally to parse Encog files. A file section is part of

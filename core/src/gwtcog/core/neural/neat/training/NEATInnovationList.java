@@ -23,11 +23,11 @@
  */
 package gwtcog.core.neural.neat.training;
 
+import gwtcog.core.neural.neat.NEATPopulation;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-
-import gwtcog.core.neural.neat.NEATPopulation;
 
 /**
  * Implements a NEAT innovation list.

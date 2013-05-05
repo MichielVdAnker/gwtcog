@@ -23,14 +23,6 @@
  */
 package gwtcog.core;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import gwtcog.core.mathutil.randomize.factory.BasicRandomFactory;
 import gwtcog.core.mathutil.randomize.factory.RandomFactory;
 import gwtcog.core.plugin.EncogPluginBase;
@@ -40,6 +32,14 @@ import gwtcog.core.plugin.system.SystemLoggingPlugin;
 import gwtcog.core.plugin.system.SystemMethodsPlugin;
 import gwtcog.core.plugin.system.SystemTrainingPlugin;
 import gwtcog.core.util.concurrency.EngineConcurrency;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Main Encog class, does little more than provide version information. Also

@@ -23,12 +23,12 @@
  */
 package gwtcog.core.ml.data.specific;
 
-import java.io.Serializable;
-
 import gwtcog.core.mathutil.matrices.BiPolarUtil;
 import gwtcog.core.ml.data.MLData;
 import gwtcog.core.ml.data.MLDataError;
 import gwtcog.core.util.kmeans.Centroid;
+
+import java.io.Serializable;
 
 /**
  * A NeuralData implementation designed to work with bipolar data. Bipolar data

@@ -23,8 +23,6 @@
  */
 package gwtcog.core.ml.factory.method;
 
-import java.util.List;
-
 import gwtcog.core.EncogError;
 import gwtcog.core.engine.network.activation.ActivationFunction;
 import gwtcog.core.engine.network.activation.ActivationLinear;
@@ -34,6 +32,8 @@ import gwtcog.core.ml.factory.parse.ArchitectureLayer;
 import gwtcog.core.ml.factory.parse.ArchitectureParse;
 import gwtcog.core.neural.networks.BasicNetwork;
 import gwtcog.core.neural.networks.layers.BasicLayer;
+
+import java.util.List;
 
 /**
  * A factor to create feedforward networks.
