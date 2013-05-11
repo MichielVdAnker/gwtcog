@@ -2,7 +2,7 @@
  * Encog(tm) Core v3.2 - Java Version
  * http://www.heatonresearch.com/encog/
  * https://github.com/encog/encog-java-core
- 
+
  * Copyright 2008-2013 Heaton Research, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,28 +42,30 @@ import gwtcog.core.ml.factory.train.PNNTrainFactory;
 import gwtcog.core.ml.factory.train.QuickPropFactory;
 import gwtcog.core.ml.factory.train.RPROPFactory;
 import gwtcog.core.ml.factory.train.SCGFactory;
+import gwtcog.core.ml.factory.train.SVMFactory;
+import gwtcog.core.ml.factory.train.SVMSearchFactory;
 import gwtcog.core.ml.factory.train.TrainBayesianFactory;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.plugin.EncogPluginBase;
 import gwtcog.core.plugin.EncogPluginService1;
 
 public class SystemTrainingPlugin implements EncogPluginService1 {
-	
+
 	/**
 	 * The factory for K2
 	 */
 	private final TrainBayesianFactory bayesianFactory = new TrainBayesianFactory();
-	
+
 	/**
 	 * The factory for backprop.
 	 */
 	private final BackPropFactory backpropFactory = new BackPropFactory();
-	
+
 	/**
 	 * The factory for LMA.
 	 */
 	private final LMAFactory lmaFactory = new LMAFactory();
-	
+
 	/**
 	 * The factory for RPROP.
 	 */
@@ -73,23 +75,22 @@ public class SystemTrainingPlugin implements EncogPluginService1 {
 	 * The factory for SCG.
 	 */
 	private final SCGFactory scgFactory = new SCGFactory();
-	
+
 	/**
 	 * The factory for simulated annealing.
 	 */
 	private final AnnealFactory annealFactory = new AnnealFactory();
-	
+
 	/**
 	 * Nelder Mead Factory.
 	 */
 	private final NelderMeadFactory nmFactory = new NelderMeadFactory();
-	
+
 	/**
 	 * The factory for neighborhood SOM.
 	 */
-	private final NeighborhoodSOMFactory neighborhoodFactory 
-		= new NeighborhoodSOMFactory();
-	
+	private final NeighborhoodSOMFactory neighborhoodFactory = new NeighborhoodSOMFactory();
+
 	/**
 	 * The factory for SOM cluster.
 	 */
@@ -99,17 +100,17 @@ public class SystemTrainingPlugin implements EncogPluginService1 {
 	 * The factory for genetic.
 	 */
 //	private final GeneticFactory geneticFactory = new GeneticFactory();
-	
+
 	/**
 	 * The factory for Manhattan networks.
 	 */
 	private final ManhattanFactory manhattanFactory = new ManhattanFactory();
-	
+
 	/**
 	 * Factory for SVD.
 	 */
-//	private final RBFSVDFactory svdFactory = new RBFSVDFactory();
-	
+	//	private final RBFSVDFactory svdFactory = new RBFSVDFactory();
+
 	/**
 	 * Factory for PNN.
 	 */
@@ -119,13 +120,23 @@ public class SystemTrainingPlugin implements EncogPluginService1 {
 	 * Factory for quickprop.
 	 */
 	private final QuickPropFactory qpropFactory = new QuickPropFactory(); 
-	
-//	private final PSOFactory psoFactory = new PSOFactory();
-	
+
+	//	private final PSOFactory psoFactory = new PSOFactory();
+
 	private final NEATGAFactory neatGAFactory = new NEATGAFactory(); 
-	
+
 	private final EPLGAFactory eplTrainFctory = new EPLGAFactory(); 
-	
+
+	/**
+	 * THe factory for basic SVM.
+	 */
+	private final SVMFactory svmFactory = new SVMFactory();
+
+	/**
+	 * The factory for SVM-Search.
+	 */
+	private final SVMSearchFactory svmSearchFactory = new SVMSearchFactory();
+
 	/**
 	 * {@inheritDoc}
 	 */
@@ -190,14 +201,14 @@ public class SystemTrainingPlugin implements EncogPluginService1 {
 			return this.neighborhoodFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_ANNEAL.equalsIgnoreCase(type)) {
 			return this.annealFactory.create(method, training, args2);
-//		} else if (MLTrainFactory.TYPE_GENETIC.equalsIgnoreCase(type)) {
-//			return this.geneticFactory.create(method, training, args2);
+			//		} else if (MLTrainFactory.TYPE_GENETIC.equalsIgnoreCase(type)) {
+			//			return this.geneticFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_SOM_CLUSTER.equalsIgnoreCase(type)) {
 			return this.somClusterFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_MANHATTAN.equalsIgnoreCase(type)) {
 			return this.manhattanFactory.create(method, training, args2);
-//		}  else if (MLTrainFactory.TYPE_SVD.equalsIgnoreCase(type)) {
-//			return this.svdFactory.create(method, training, args2);
+			//		}  else if (MLTrainFactory.TYPE_SVD.equalsIgnoreCase(type)) {
+			//			return this.svdFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_PNN.equalsIgnoreCase(type)) {
 			return this.pnnFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_QPROP.equalsIgnoreCase(type)) {
@@ -206,18 +217,23 @@ public class SystemTrainingPlugin implements EncogPluginService1 {
 			return this.bayesianFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_NELDER_MEAD.equals(type) ) {
 			return this.nmFactory.create(method, training, args2);
-//		} else if (MLTrainFactory.TYPE_PSO.equals(type) ) {
-//			return this.psoFactory.create(method, training, args2);
+			//		} else if (MLTrainFactory.TYPE_PSO.equals(type) ) {
+			//			return this.psoFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_NEAT_GA.equals(type) ) {
 			return this.neatGAFactory.create(method, training, args2);
 		} else if (MLTrainFactory.TYPE_EPL_GA.equals(type) ) {
 			return this.eplTrainFctory.create(method, training, args2);
+		} else if (MLTrainFactory.TYPE_SVM.equalsIgnoreCase(type)) {
+			return this.svmFactory.create(method, training, args2);
+		} else if (MLTrainFactory.TYPE_SVM_SEARCH.equalsIgnoreCase(type)) {
+			return this.svmSearchFactory.create(method, training, args2);
 		}
+
 		else {
 			throw new EncogError("Unknown training type: " + type);
 		}
 	}
-	
+
 	/**
 	 * {@inheritDoc}
 	 */

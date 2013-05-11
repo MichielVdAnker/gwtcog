@@ -4,8 +4,10 @@ import gwtcog.examples.client.clustering.kmeans.SimpleKMeans;
 import gwtcog.examples.client.neural.boltzmann.BoltzTSP;
 import gwtcog.examples.client.neural.hopfield.HopfieldAssociate;
 import gwtcog.examples.client.neural.neat.XORNEAT;
+import gwtcog.examples.client.neural.neat.boxes.VisualizeBoxesMain;
 import gwtcog.examples.client.neural.predict.sunspot.PredictSunspotSVM;
 import gwtcog.examples.client.neural.som.SimpleSOM;
+import gwtcog.examples.client.neural.xor.XORFactory;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -135,7 +137,39 @@ public class Demo implements EntryPoint {
 			}
 		});
 		optionsPanel.add(demoButton);
+		
+		//XORFactory
+		demoButton = new Button("XORFactory", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
 
+					public void onSuccess() {
+						new XORFactory().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
+		
+		//NEATBoxes
+		demoButton = new Button("NEATBoxes", new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				GWT.runAsync(new RunAsyncCallback() {
+					public void onFailure(Throwable caught) {
+						Window.alert("Something failed");
+					}
+
+					public void onSuccess() {
+						new VisualizeBoxesMain().run(demoPanel);
+					}
+				});
+			}
+		});
+		optionsPanel.add(demoButton);
+		
 	}
 
 }

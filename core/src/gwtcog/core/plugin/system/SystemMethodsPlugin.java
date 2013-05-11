@@ -2,7 +2,7 @@
  * Encog(tm) Core v3.2 - Java Version
  * http://www.heatonresearch.com/encog/
  * https://github.com/encog/encog-java-core
- 
+
  * Copyright 2008-2013 Heaton Research, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,6 +35,7 @@ import gwtcog.core.ml.factory.method.NEATFactory;
 import gwtcog.core.ml.factory.method.PNNFactory;
 import gwtcog.core.ml.factory.method.RBFNetworkFactory;
 import gwtcog.core.ml.factory.method.SOMFactory;
+import gwtcog.core.ml.factory.method.SVMFactory;
 import gwtcog.core.ml.train.MLTrain;
 import gwtcog.core.plugin.EncogPluginBase;
 import gwtcog.core.plugin.EncogPluginService1;
@@ -49,39 +50,44 @@ public class SystemMethodsPlugin implements EncogPluginService1 {
 	 * A factory used to create feedforward neural networks.
 	 */
 	private final FeedforwardFactory feedforwardFactory 
-		= new FeedforwardFactory();
+	= new FeedforwardFactory();
+
+	/**
+	 * A factory used to create support vector machines.
+	 */
+	private final SVMFactory svmFactory = new SVMFactory();
 	
 	/**
 	 * A factory used to create RBF networks.
 	 */
 	private final RBFNetworkFactory rbfFactory = new RBFNetworkFactory();
-	
+
 	/**
 	 * The factory for PNN's.
 	 */
 	private final PNNFactory pnnFactory = new PNNFactory();
-	
+
 	/**
 	 * A factory used to create SOM's.
 	 */
 	private final SOMFactory somFactory = new SOMFactory();
-	
+
 	/**
 	 * A factory used to create Bayesian networks
 	 */
 	private final BayesianFactory bayesianFactory = new BayesianFactory();
-	
+
 	/**
 	 * A factory used to create NEAT populations.
 	 */
 	private final NEATFactory neatFactory = new NEATFactory();
-	
+
 	/**
 	 * A factory used to create NEAT populations.
 	 */
 	private final EPLFactory eplFactory = new EPLFactory();
 
-	
+
 	/**
 	 * {@inheritDoc}
 	 */
@@ -111,11 +117,12 @@ public class SystemMethodsPlugin implements EncogPluginService1 {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
-	public ActivationFunction createActivationFunction(String name) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		@Override
+		public ActivationFunction createActivationFunction(String name) {
+			System.out.println("Warning: 'TODO Auto-generated method stub' reached int SystemMethodsPlugin.createActivationFunction(String)");
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 	/**
 	 * {@inheritDoc}
@@ -137,8 +144,10 @@ public class SystemMethodsPlugin implements EncogPluginService1 {
 			return this.neatFactory.create(architecture, input, output);
 		} else if (MLMethodFactory.TYPE_EPL.equals(methodType)) {
 			return this.eplFactory.create(architecture, input, output);
+		} else if (MLMethodFactory.TYPE_SVM.equals(methodType)) {
+			return this.svmFactory.create(architecture, input, output);
 		}
-		
+
 		throw new EncogError("Unknown method type: " + methodType);
 	}
 

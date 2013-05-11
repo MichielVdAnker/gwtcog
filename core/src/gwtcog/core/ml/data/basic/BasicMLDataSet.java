@@ -29,7 +29,6 @@ import gwtcog.core.ml.data.MLDataPair;
 import gwtcog.core.ml.data.MLDataSet;
 import gwtcog.core.util.EngineArray;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +40,7 @@ import java.util.List;
  * 
  * @author jheaton
  */
-public class BasicMLDataSet implements Serializable, MLDataSet {
+public class BasicMLDataSet implements MLDataSet {
 
 	/**
 	 * An iterator to be used with the BasicMLDataSet. This iterator does not

@@ -21,7 +21,7 @@
  * and trademarks visit:
  * http://www.heatonresearch.com/copyright
  */
-package gwtcog.examples.client.org.encog.examples.neural.neat.boxes;
+package gwtcog.examples.client.neural.neat.boxes;
 
 import gwtcog.core.mathutil.IntPair;
 import gwtcog.core.ml.CalculateScore;

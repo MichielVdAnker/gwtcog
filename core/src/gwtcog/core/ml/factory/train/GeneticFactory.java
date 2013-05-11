@@ -39,7 +39,7 @@ package gwtcog.core.ml.factory.train;
 //import gwtcog.core.neural.networks.training.TrainingError;
 //import gwtcog.core.neural.networks.training.TrainingSetScore;
 //import gwtcog.core.util.ParamsHolder;
-////import gwtcog.core.util.obj.ObjectCloner;
+//import gwtcog.core.util.obj.ObjectCloner;
 //
 ///**
 // * A factory to create genetic algorithm trainers.

@@ -21,7 +21,7 @@
  * and trademarks visit:
  * http://www.heatonresearch.com/copyright
  */
-package gwtcog.examples.client.org.encog.examples.neural.neat.boxes;
+package gwtcog.examples.client.neural.neat.boxes;
 
 import gwtcog.core.mathutil.IntPair;
 import gwtcog.core.neural.hyperneat.HyperNEATCODEC;
@@ -31,45 +31,55 @@ import gwtcog.core.neural.neat.NEATNetwork;
 import gwtcog.core.neural.neat.NEATPopulation;
 import gwtcog.core.neural.neat.training.NEATGenome;
 
-import java.awt.Color;
-import java.awt.Graphics;
 import java.util.Random;
 
-import javax.swing.JPanel;
+import com.google.gwt.canvas.client.Canvas;
+import com.google.gwt.canvas.dom.client.Context2d;
+import com.google.gwt.user.client.ui.SimplePanel;
 
-public class DisplayBoxesPanel extends JPanel {
-	
+public class DisplayBoxesPanel extends SimplePanel {
+
+	private Canvas canvas;
+
 	/**
 	 * The serial.
 	 */
-	private static final long serialVersionUID = 1L;
+	//	private static final long serialVersionUID = 1L;
 	private BoxTrialCase testCase = new BoxTrialCase(new Random());
 	private NEATPopulation pop;
 	private int resolution = BoxTrialCase.BASE_RESOLUTION;
-	
+
 	public DisplayBoxesPanel(NEATPopulation thePopulation) {
 		testCase.initTestCase(0);
 		this.pop = thePopulation;
+		canvas = Canvas.createIfSupported();
+		canvas.setCoordinateSpaceHeight(400);
+		canvas.setCoordinateSpaceWidth(400);
+		canvas.setSize("400px", "400px");
+		add(canvas);
 	}
 
-	@Override
-	public void paint(Graphics g) {
-		
+	//	@Override
+	public void paint() {//(Graphics g) {
+
+		Context2d g = canvas.getContext2d();
+
 		NEATGenome genome = (NEATGenome) this.pop.getBestGenome();
 		Substrate substrate = SubstrateFactory.factorSandwichSubstrate(resolution, resolution);
 		HyperNEATCODEC codec = new HyperNEATCODEC();
 		NEATNetwork phenotype = (NEATNetwork) codec.decode(this.pop, substrate, genome);		
-				
+
 		TrialEvaluation trial = new TrialEvaluation(phenotype, this.testCase);
 		IntPair actualPos = trial.query(resolution);
-		
+
 		// clear what was there before
-		g.setColor(Color.white);
-		g.fillRect(0, 0, getWidth(), getHeight());
-		
+		//g.setColor(Color.white);
+		g.setFillStyle("white");
+		g.fillRect(0, 0, 400, 400);
+
 		//
-		int boxWidth = this.getWidth()/resolution;
-		int boxHeight = this.getHeight()/resolution;
+		int boxWidth = 400/resolution;
+		int boxHeight = 400/resolution;
 		double delta = 2.0 / resolution;
 		int index = 0;
 
@@ -79,31 +89,41 @@ public class DisplayBoxesPanel extends JPanel {
 			for(int col = 0; col< resolution; col++ ) {
 				double x = -1 + (col*delta);
 				int boxX = col*boxWidth;
-				
+
 				if( this.testCase.getPixel(x, y)>0 ) {
-					g.setColor(Color.blue);
+					//g.setColor(Color.blue);
+					g.setFillStyle("blue");
 					g.fillRect(boxX, boxY, boxWidth, boxHeight);
 				} else {
 					double d = trial.getOutput().getData(index);
+
 					int c = trial.normalize(d,255);
-					g.setColor(new Color(255,c,255));
+					String hex = Integer.toHexString(c);
+					if(hex.length() == 1) {
+						hex = "0"+hex;
+					}
+					String color = "#ff"+hex+"ff";
+					g.setFillStyle(color);
 					g.fillRect(boxX, boxY, boxWidth, boxHeight);
-					g.setColor(Color.black);
-					g.drawRect(boxX, boxY, boxWidth, boxHeight);
-					g.drawRect(boxX+1, boxY+1, boxWidth-2, boxHeight-2);
+					
+					g.setStrokeStyle("black");
+
+					g.strokeRect(boxX, boxY, boxWidth, boxHeight);
+					g.strokeRect(boxX+1, boxY+1, boxWidth-2, boxHeight-2);
 				}
 				index++;
 			}
 		}
-		
-		g.setColor(Color.red);
+
+		g.setFillStyle("red");
 		g.fillRect(actualPos.getX()*boxWidth, actualPos.getY()*boxHeight, boxWidth, boxHeight);
 	}
-	
+
 	public void createNewCase(int theResolution) {
 		Random r = new Random();
 		this.resolution = theResolution;
 		this.testCase.initTestCase(r.nextInt(3));
-		this.repaint();
+		//this.repaint();
+		paint();
 	}	
 }

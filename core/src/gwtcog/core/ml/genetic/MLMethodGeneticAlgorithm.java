@@ -40,7 +40,6 @@ import gwtcog.core.ml.genetic.crossover.Splice;
 import gwtcog.core.ml.genetic.mutate.MutatePerturb;
 import gwtcog.core.ml.train.BasicTraining;
 import gwtcog.core.neural.networks.training.propagation.TrainingContinuation;
-import gwtcog.core.util.concurrency.MultiThreadable;
 import gwtcog.core.util.logging.EncogLogging;
 
 /**
@@ -61,7 +60,7 @@ import gwtcog.core.util.logging.EncogLogging;
  * create your own implementation of the CalculateScore method. This class can
  * then score the networks any way that you like.
  */
-public class MLMethodGeneticAlgorithm extends BasicTraining implements MultiThreadable {
+public class MLMethodGeneticAlgorithm extends BasicTraining {
 
 	/**
 	 * Very simple class that implements a genetic algorithm.
@@ -198,14 +197,14 @@ public class MLMethodGeneticAlgorithm extends BasicTraining implements MultiThre
 		this.genetic = genetic;
 	}
 
-	@Override
-	public int getThreadCount() {
-		return this.genetic.getThreadCount();
-	}
-
-	@Override
-	public void setThreadCount(int numThreads) {
-		this.genetic.setThreadCount(numThreads);
-		
-	}
+	//remnant from implments MultiThrseadable
+//	@Override
+//	public int getThreadCount() {
+//		return this.genetic.getThreadCount();
+//	}
+//
+//	@Override
+//	public void setThreadCount(int numThreads) {
+//		this.genetic.setThreadCount(numThreads);
+//	}
 }
